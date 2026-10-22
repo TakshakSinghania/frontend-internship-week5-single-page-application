@@ -66,6 +66,19 @@ Final run:
 | Dashboard → Library → Book 1, then browser Back → Library, Forward → Book 1; a `window` flag set at the start was still present (same document) | Pass |
 | Review of all 10 screenshots in `docs/screenshots/` | Found defect 1; pass after the fix |
 
+### ZIP archive verification (`week-5-single-page-application.zip`)
+
+Built with `npm run zip`, then checked from a fresh folder:
+
+| Check | Result |
+|-------|--------|
+| `unzip -t` integrity test | No errors detected |
+| Contents compared with `git ls-files` | Every tracked project file present; files sit under one top-level `week-5-single-page-application/` folder |
+| Excluded items | No `node_modules/`, `.git/`, `.DS_Store` or nested ZIP |
+| Extracted copy: `npm ci` then `npm test` | 47 packages installed from the lockfile; validators pass; 14/14 end-to-end tests pass |
+
+The archive was rebuilt once after this section was added, so that it contains this file, and the same checks were run again on the rebuilt archive.
+
 ## Defects found and fixed
 
 | # | Defect | Found by | Fix |
