@@ -1,0 +1,20 @@
+{
+  "name": "week-5-single-page-application",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shelf: a single-page reading tracker with hash-based client-side routing. Dev dependencies are only used for testing.",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "validate": "html-validate index.html && csstree-validator css/styles.css && node --check js/main.js",
+    "e2e": "node --test tests/",
+    "screenshots": "node tests/screenshots.mjs",
+    "zip": "cd .. && rm -f week-5-single-page-application/week-5-single-page-application.zip && zip -r -X -q week-5-single-page-application/week-5-single-page-application.zip week-5-single-page-application -x 'week-5-single-page-application/node_modules/*' 'week-5-single-page-application/.git/*' '*.DS_Store' 'week-5-single-page-application/week-5-single-page-application.zip'",
+    "test": "npm run validate && npm run e2e"
+  },
+  "devDependencies": {
+    "csstree-validator": "4.0.1",
+    "html-validate": "11.17.0",
+    "puppeteer-core": "25.16.0"
+  }
+}
