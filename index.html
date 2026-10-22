@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shelf · Reading tracker</title>
+  <meta name="description" content="Shelf is a small single-page reading tracker: a dashboard, a filterable library, book pages, statistics and an add-a-book form, all without page reloads.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#view" data-skip-link>Skip to content</a>
+
+  <div class="app">
+    <header class="sidebar">
+      <a class="brand" href="#/">
+        <img src="assets/favicon.svg" alt="" width="32" height="32">
+        <span>Shelf</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <ul>
+          <li><a href="#/" data-nav="/"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z"/></svg><span>Dashboard</span></a></li>
+          <li><a href="#/library" data-nav="/library"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4h3v16H5zM10 4h3v16h-3zM15.5 5l2.8-.8 3.2 15-2.8.8z"/></svg><span>Library</span></a></li>
+          <li><a href="#/add" data-nav="/add"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6z"/></svg><span>Add book</span></a></li>
+          <li><a href="#/stats" data-nav="/stats"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 20V10h3v10zM10.5 20V4h3v16zM16 20v-7h3v7z"/></svg><span>Stats</span></a></li>
+          <li><a href="#/about" data-nav="/about"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18zm-1 7v7h2v-7zm0-3v2h2V7z"/></svg><span>About</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main" id="view" tabindex="-1">
+      <!-- Replaced by the app as soon as js/main.js runs. Stays visible if JavaScript modules cannot load. -->
+      <section class="view">
+        <h1 id="view-title" tabindex="-1">Loading Shelf…</h1>
+        <p class="muted">If this message does not go away, the page has to be opened through a web server (for example <code>python3 -m http.server</code>), because browsers block JavaScript modules on <code>file://</code> pages. See README.md.</p>
+      </section>
+    </main>
+  </div>
+
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+  <dialog class="dialog" id="confirm-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-message">
+    <form method="dialog">
+      <h2 id="dialog-title" data-dialog-title>Are you sure?</h2>
+      <p id="dialog-message" data-dialog-message></p>
+      <div class="form-actions">
+        <button class="button button-ghost" type="submit" value="cancel" data-dialog-cancel>Cancel</button>
+        <button class="button button-danger" type="submit" value="confirm" data-dialog-confirm>Confirm</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>

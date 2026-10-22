@@ -1,0 +1,17 @@
+{
+  "goal": 12,
+  "books": [
+    { "id": 1, "title": "Godaan", "author": "Munshi Premchand", "pages": 344, "genre": "Classic", "status": "finished", "progress": 344, "rating": 5, "addedAt": "2026-01-04", "finishedAt": "2026-02-10", "notes": "" },
+    { "id": 2, "title": "The Guide", "author": "R. K. Narayan", "pages": 220, "genre": "Classic", "status": "finished", "progress": 220, "rating": 4, "addedAt": "2026-02-12", "finishedAt": "2026-03-01", "notes": "" },
+    { "id": 3, "title": "Atomic Habits", "author": "James Clear", "pages": 320, "genre": "Self-help", "status": "reading", "progress": 140, "rating": null, "addedAt": "2026-09-20", "finishedAt": null, "notes": "" },
+    { "id": 4, "title": "Sapiens", "author": "Yuval Noah Harari", "pages": 443, "genre": "History", "status": "want", "progress": 0, "rating": null, "addedAt": "2026-08-02", "finishedAt": null, "notes": "" },
+    { "id": 5, "title": "The God of Small Things", "author": "Arundhati Roy", "pages": 340, "genre": "Fiction", "status": "reading", "progress": 60, "rating": null, "addedAt": "2026-10-01", "finishedAt": null, "notes": "" },
+    { "id": 6, "title": "Clean Code", "author": "Robert C. Martin", "pages": 464, "genre": "Technology", "status": "reading", "progress": 210, "rating": null, "addedAt": "2026-07-15", "finishedAt": null, "notes": "" },
+    { "id": 7, "title": "Malgudi Days", "author": "R. K. Narayan", "pages": 256, "genre": "Short stories", "status": "finished", "progress": 256, "rating": 4, "addedAt": "2026-03-05", "finishedAt": "2026-04-18", "notes": "" },
+    { "id": 8, "title": "The Pragmatic Programmer", "author": "David Thomas and Andrew Hunt", "pages": 352, "genre": "Technology", "status": "want", "progress": 0, "rating": null, "addedAt": "2026-06-11", "finishedAt": null, "notes": "" },
+    { "id": 9, "title": "Wings of Fire", "author": "A. P. J. Abdul Kalam", "pages": 180, "genre": "Biography", "status": "finished", "progress": 180, "rating": 5, "addedAt": "2026-04-20", "finishedAt": "2026-05-09", "notes": "" },
+    { "id": 10, "title": "Eloquent JavaScript", "author": "Marijn Haverbeke", "pages": 472, "genre": "Technology", "status": "want", "progress": 0, "rating": null, "addedAt": "2026-09-01", "finishedAt": null, "notes": "" },
+    { "id": 11, "title": "Train to Pakistan", "author": "Khushwant Singh", "pages": 181, "genre": "Fiction", "status": "want", "progress": 0, "rating": null, "addedAt": "2026-05-22", "finishedAt": null, "notes": "" },
+    { "id": 12, "title": "Thinking, Fast and Slow", "author": "Daniel Kahneman", "pages": 499, "genre": "Psychology", "status": "finished", "progress": 499, "rating": 3, "addedAt": "2026-05-10", "finishedAt": "2026-07-30", "notes": "" }
+  ]
+}
